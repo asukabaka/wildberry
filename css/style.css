@@ -1,101 +1,202 @@
 body{
-	background-color: white;
-	padding: 0;
-	max-width: 100%;
-	overflow-x: hidden;
+	background-color: #a9cc69;
 }
-a{
-	text-decoration: none;
-	color: inherit;
-}
-nav{
-padding-top: 25px;
-}
-.logo{
-	background: url(../images/wildberry-logo-white.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	width: 245px;
-	height: 64.05px;
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-	position: relative;
-}
-.line{
-	padding-top: 30px;
-	width: 100%;
-	border-bottom-style: solid;
-	border-color: white;
-	border-width: .5px;
-}
-.top_nav_bar_grid{
-	margin: 25px auto 25px;
-	max-width: 460px;
-	max-height: 150px;
-	display: grid;
-	grid-gap: 30px;
-	overflow: hidden;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-areas: "menu locations about";
-	justify-content: center;
-	align-items: center;
-	padding: 0;
-}
-.menu_items{
-	font-family: 'Karla', sans-serif;
+
+h1{
+	font-family: 'Dosis', sans-serif;
 	font-size: 1.25em;
-	letter-spacing: -1px;
+	letter-spacing: -.75px;
+	color: white;
+	width: inherit;
+}
+
+h2{
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.75em;
+	letter-spacing: -.75px;
+	color: #636363;
+	width: inherit;
 	text-align: center;
-	position: relative;
-	list-style: none;
+}
+
+h5{
+	font-family: 'Dosis', sans-serif;
+	font-size: 3em;
+	letter-spacing: -.75px;
+	color: #f16078;
+	width: 100%;
+	text-align: center;
+}
+
+a.nav-link{
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.25em;
+	letter-spacing: -.75px;
 	color: white;
 }
-.slider {
-	width: 65%;
-	margin: 100px auto;
+
+li.nav-item{
+	margin-left: 8px;
+	margin-right: 8px;
 }
-.slick-slide {
-	margin: 0px 0px;
+
+.navbar.navbar-expand-lg.navbar-light{
+	background-color: #f16078;
+	max-width: 1280px;
+	margin: auto;
+	margin-top: 20px;
+	padding-top: .25em;
+	padding-bottom: .5em;
 }
-.slick-slide img {
+
+.navbar-light .navbar-nav .nav-link{
+	color: white;
+}
+
+.navbar-brand{
+	width: 170px;
+	margin-top: 5px;
+	margin-left: 23px;
+}
+
+.navbar-nav.me-auto.mb-2.mb-lg-0{
+	margin-left: 20px;
+	margin-top: 7px;
+}
+
+.content{
+	margin: auto;
+	max-width: 1280px;
+	height: 100%;
+	background-color: #f1f1f1;
+}
+
+.carousel-indicators{
+	background-color: rgba(0,0,0,.2);
+	left: auto;
+}
+
+.carousel-control-prev-icon , .carousel-control-next-icon{
+	background-color: rgba(0,0,0,.4);
+}
+
+.card{
+	margin: auto;
+	border: none;
 	width: 100%;
 }
-.slick-prev:before,
-.slick-next:before {
-	color: white;
+
+.items{
+	margin: auto;
+	max-width: 1280px;
+	display: flex;
+	flex-direction: row;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: white;
 }
-.slick-slide {
-	transition: all ease-in-out .3s;
-	opacity: 1;
+
+@media (max-width: 900px) {
+	.items{
+		flex-direction: column;
+	}
 }
-.slick-active {
-	opacity: 1;
+
+.footer{
+	margin: auto;
+	max-width: 1280px;
+	height: 100%;
+	background-color: #f16078;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	margin-bottom: 20px;
 }
-.slick-current {
-	opacity: 1;
+
+.berry{
+	display: flex;
+	margin: auto;
+	max-width: 275px;
+	width: 100%;
+	height: auto;
 }
-.slider-for{
-	opacity: 1;
-	position: fixed;
-	z-index: -1;
-	top: 0px;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 150vw;
-	overflow: hidden;
+
+.copyright{
+	display: flex;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	padding-top: 30px;
 }
-.grid_description{
-	margin: 25px auto 25px;
-	max-width: 600px;
-	max-height: 600px;
-	display: grid;
-	grid-gap: 30px;
-	overflow: hidden;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-areas: "locations about";
-	justify-content: center;
-	align-items: center;
-	padding: 0;
+
+.card.bg-dark.text-white{
+	width: 100%;
+	max-width: 1280px;
+	background-color: white;
+}
+
+.bg-dark{
+	background-color: white!important;
+}
+
+.froyo-header{
+	width: 100%;
+	max-width: 1280px;
+	height: 300px;
+	margin: auto;
+	background-color: white;
+}
+
+.flavors {
+  	margin: auto;
+	max-width: 1280px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: white;
+}
+
+.instructions {
+  	margin: auto;
+	max-width: 1280px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: white;
+}
+
+.card{
+	width: 400px;
+}
+
+p.card-text{
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	color: #636363;
+}
+
+.instructions-graphic{
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	width: 200px;
+	height: auto;
+}
+
+.instructions-text{
+	margin-bottom: 30px;
+}
+
+.banner {
+  	margin: auto;
+	max-width: 1280px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #ffb677;
 }

@@ -2,6 +2,15 @@ body{
 	background-color: #a9cc69;
 }
 
+.transition-fade{
+	opacity: 1;
+	transition: 500ms;
+}
+
+html.is-animating .transition-fade{
+	opacity: 0;
+}
+
 h1{
 	font-family: 'Dosis', sans-serif;
 	font-size: 1.25em;
@@ -15,6 +24,15 @@ h2{
 	font-size: 1.75em;
 	letter-spacing: -.75px;
 	color: #636363;
+	width: inherit;
+	text-align: center;
+}
+
+h3{
+	font-family: 'Dosis', sans-serif;
+	font-size: 5em;
+	letter-spacing: -.75px;
+	color: white;
 	width: inherit;
 	text-align: center;
 }
@@ -91,8 +109,6 @@ li.nav-item{
 	max-width: 1280px;
 	display: flex;
 	flex-direction: row;
-	padding-top: 50px;
-	padding-bottom: 50px;
 	background-color: white;
 }
 
@@ -152,8 +168,6 @@ li.nav-item{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	padding-top: 50px;
-	padding-bottom: 50px;
 	background-color: white;
 }
 
@@ -162,13 +176,13 @@ li.nav-item{
 	max-width: 1280px;
 	display: flex;
 	flex-direction: column;
-	padding-top: 50px;
-	padding-bottom: 50px;
 	background-color: white;
 }
 
 .card{
-	width: 400px;
+	max-width: 400px;
+	width: 100%;
+	height: auto;
 }
 
 p.card-text{
@@ -193,10 +207,10 @@ p.card-text{
 .banner {
   	margin: auto;
 	max-width: 1280px;
-	height: 300px;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 35px;
+	padding-bottom: 35px;
 	background-color: #ffb677;
 }

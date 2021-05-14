@@ -7,37 +7,38 @@
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/swup.min.js"></script>
+    <script type="module" src="js/swup-init.js"></script>
     <title>Wildberry Frozen Yogurt & Boba - Home</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="images/wildberry-logo-white.svg"></a>
+        <a class="navbar-brand" href="/index.html"><img src="images/wildberry-logo-white.svg"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="froyo&toppings.html">froyo & toppings</a>
+              <a class="nav-link" href="/froyo&toppings.html">froyo & toppings</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="boba&tea.html">boba milk tea</a>
+              <a class="nav-link" href="/boba&tea.html">boba milk tea</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="location&hours.html">locations & hours</a>
+              <a class="nav-link" href="/location&hours.html">locations & hours</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <main id="swup" class="transition-fade">
     <div class="card bg-dark text-white">
-      <img src="images/demo.jpg" class="card-img" alt="...">
-      <div class="card-img-overlay">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text">Last updated 3 mins ago</p>
-      </div>
+      <img src="images/demo-4.png" class="card-img" alt="...">
+    </div>
+    <div class="banner">
+      <h3>self serve froyo your way!</h3>
     </div>
     <div class="instructions">
       <div class="items">
@@ -68,7 +69,7 @@
       </div>
     </div>
     <div class="banner">
-      
+      <h3>find your flavor</h3>
     </div>
     <div class="flavors">
       <div class="card">
@@ -127,7 +128,7 @@
       </div>
     </div>
     <div class="banner">
-      
+      <h3>stack your toppings</h3>
     </div>
     <div class="flavors">
       <div class="card">
@@ -191,6 +192,9 @@
         <h1>Copyright © 2012 Wild Berry Yogurt. All rights reserved.</h1>
       </div>
     </footer>
+    </main>
     <script src="js/bootstrap.bundle.min.js"></script>
+      const swup = new Swup();
+    </script>
   </body>
 </html>

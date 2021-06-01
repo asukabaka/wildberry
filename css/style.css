@@ -1,5 +1,6 @@
 body{
 	background-color: #a9cc69;
+	overflow-y: scroll;
 }
 
 .transition-fade{
@@ -212,5 +213,10 @@ p.card-text{
 	flex-direction: column;
 	padding-top: 35px;
 	padding-bottom: 35px;
-	background-color: #ffb677;
+	background-color: #f16078;
+}
+
+.map{
+	width: 100%;
+	height: 250px;
 }

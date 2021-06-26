@@ -5,6 +5,7 @@ html{
 body{
 	background-color: #a9cc69;
 	position: relative;
+	overflow-x: hidden;
 }
 
 a:link{

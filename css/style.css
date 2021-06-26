@@ -3,6 +3,20 @@ body{
 	overflow-y: scroll;
 }
 
+a:link{
+	text-decoration: none;
+}
+
+ol, ul{
+	padding-right: 2rem;
+}
+
+.background-color{
+	max-width: 1280px;
+	background-color: white;
+	margin: auto;
+}
+
 .transition-fade{
 	opacity: 1;
 	transition: 500ms;
@@ -12,9 +26,33 @@ html.is-animating .transition-fade{
 	opacity: 0;
 }
 
+.text{
+	max-width: 600px;
+	margin: auto;
+	padding: 30px;
+}
+
+.about{
+	object-fit: cover;
+	min-height: 400px;
+}
+
+.bi{
+	color: white;
+	font-size: 1.5em;
+}
+
+.bi-instagram{
+	margin-left: 11px;
+}
+
+.bi-facebook{
+	margin-left: 5px;
+}
+
 h1{
 	font-family: 'Dosis', sans-serif;
-	font-size: 1.25em;
+	font-size: 1em;
 	letter-spacing: -.75px;
 	color: white;
 	width: inherit;
@@ -31,20 +69,93 @@ h2{
 
 h3{
 	font-family: 'Dosis', sans-serif;
-	font-size: 5em;
+	font-size: 3em;
+	letter-spacing: -.75px;
+	color: #f16078;
+	width: inherit;
+	text-align: center;
+}
+
+.footer-title{
+	color: white;
+	padding-bottom: 50px;
+}
+
+h4{
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.4em;
 	letter-spacing: -.75px;
 	color: white;
 	width: inherit;
 	text-align: center;
 }
 
+.location-h4{
+	text-align: center;
+}
+
 h5{
 	font-family: 'Dosis', sans-serif;
-	font-size: 3em;
+	font-size: 2.5em;
 	letter-spacing: -.75px;
 	color: #f16078;
 	width: 100%;
 	text-align: center;
+}
+
+p.card-text{
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	color: #636363;
+/*	height: 140px;*/
+}
+
+p.card-text-white{
+	font-family: 'Dosis', sans-serif;
+	font-size: 1em;
+	text-align: center;
+	color: white;
+}
+
+p.card-text-address{
+	font-family: 'Dosis', sans-serif;
+	font-size: .65em;
+	text-align: left;
+	color: white;
+}
+
+.about{
+	text-align: left;
+}
+
+.line{
+	flex-grow: 1;
+	margin-left: 20px;
+	height: 2px;
+	background-color: #f16078;
+	margin-top: 35px;
+	margin-right: 95px;
+}
+
+@media (max-width: 900px) {
+	.line{
+		margin-right: 15px;
+	}
+}
+
+.banner-text{
+	margin-left: 95px;
+}
+
+@media (max-width: 900px) {
+	.banner-text{
+		margin-left: 15px;
+	}
+}
+
+p.card-text.about{
+	text-align: left;
 }
 
 a.nav-link{
@@ -54,22 +165,31 @@ a.nav-link{
 	color: white;
 }
 
+a.nav-location{
+	font-size: 1.5em;
+	margin-top: 7px;
+}
+
 li.nav-item{
 	margin-left: 8px;
 	margin-right: 8px;
 }
 
 .navbar.navbar-expand-lg.navbar-light{
+	border-radius: 15px 15px 0px 0px;
 	background-color: #f16078;
 	max-width: 1280px;
 	margin: auto;
-	margin-top: 20px;
 	padding-top: .25em;
 	padding-bottom: .5em;
 }
 
 .navbar-light .navbar-nav .nav-link{
 	color: white;
+}
+
+.nav-link:focus, .nav-link:hover{
+	color: rgba(0,0,0,.7);
 }
 
 .navbar-brand{
@@ -85,9 +205,9 @@ li.nav-item{
 
 .content{
 	margin: auto;
-	max-width: 1280px;
+	max-width: 1090px;
 	height: 100%;
-	background-color: #f1f1f1;
+	background-color: white;
 }
 
 .carousel-indicators{
@@ -95,22 +215,78 @@ li.nav-item{
 	left: auto;
 }
 
+.carousel-inner{
+	border-radius: 15px 15px 15px 15px;
+}
+
 .carousel-control-prev-icon , .carousel-control-next-icon{
 	background-color: rgba(0,0,0,.4);
 }
 
+.topping-padding{
+	padding: .5rem .5rem;
+}
+
 .card{
 	margin: auto;
+	margin-top: 40px;
 	border: none;
+	max-width: 500px;
 	width: 100%;
+	height: auto;
+	background-color: #a9cc69;
+	border-radius: 15px;
+	padding: 7px;
+}
+
+img.card-img-top{
+	border-radius: 15px;
+}
+
+.card-banner{
+	margin-top: 0px;
+}
+
+.card-white{
+	background-color: #ededee;
+}
+
+.card-pink{
+	background-color: #bd828c;
+}
+
+.card-nonfat{
+	background-color: #97d0e6;
+}
+
+.card-lowfat{
+	background-color: #bf97e6;
+}
+
+.card-nondairy{
+	background-color: #d98079;
+}
+
+.card-toppings{
+	max-width: 200px;
+}
+
+.card-menu{
+	max-width: 350px;
+}
+
+.card-menu-text{
+	font-size: .9em;
 }
 
 .items{
 	margin: auto;
-	max-width: 1280px;
+	max-width: 1150px;
 	display: flex;
 	flex-direction: row;
 	background-color: white;
+	padding-top: 50px;
+	text-decoration: none;
 }
 
 @media (max-width: 900px) {
@@ -119,7 +295,12 @@ li.nav-item{
 	}
 }
 
+.frontpage-items{
+	padding-bottom: 150px;
+}
+
 .footer{
+	border-radius: 0px 0px 15px 15px;
 	margin: auto;
 	max-width: 1280px;
 	height: 100%;
@@ -165,11 +346,12 @@ li.nav-item{
 
 .flavors {
   	margin: auto;
-	max-width: 1280px;
+	max-width: 1150px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	background-color: white;
+	padding-bottom: 100px;
 }
 
 .instructions {
@@ -178,19 +360,6 @@ li.nav-item{
 	display: flex;
 	flex-direction: column;
 	background-color: white;
-}
-
-.card{
-	max-width: 400px;
-	width: 100%;
-	height: auto;
-}
-
-p.card-text{
-	font-family: 'Dosis', sans-serif;
-	font-size: 1.5em;
-	text-align: center;
-	color: #636363;
 }
 
 .instructions-graphic{
@@ -205,18 +374,123 @@ p.card-text{
 	margin-bottom: 30px;
 }
 
+.instructions-card{
+	margin: 20px;
+}
+
 .banner {
   	margin: auto;
 	max-width: 1280px;
 	height: 100%;
 	display: flex;
-	flex-direction: column;
-	padding-top: 35px;
-	padding-bottom: 35px;
-	background-color: #f16078;
+	flex-direction: row;
+	padding-top: 60px;
+	padding-bottom: 0px;
+	background-color: white;
+}
+
+.subtext{
+	padding-top: 0;
+	padding-bottom: 45px;
 }
 
 .map{
+	padding-top: 25px;
+	padding-bottom: 25px;
 	width: 100%;
-	height: 250px;
+	height: 300px;
+}
+
+.social-top{
+	max-width: 1280px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+	.social-top{
+		margin-top: 0px;
+	}
+}
+
+.social-bottom{
+	text-align: center;
+}
+
+.step-box{
+	display: flex;
+	width: 300px;
+	height: 150px;
+	background-color: #706254;
+	margin: auto;
+	border-radius: 25px;
+	margin-bottom: 50px;
+}
+
+.step-box-text{
+	color: white;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	font-size: 2.25em;
+}
+
+.location-footer{
+	display: flex;
+	max-width: 900px;
+	width: 100%;
+	margin: auto;
+}
+
+@media (max-width: 900px) {
+	.location-footer{
+		flex-direction: column;
+		margin-bottom: 30px
+	}
+}
+
+.location-list{
+	display: flex;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+@media (max-width: 900px) {
+	.location-list{
+		margin: auto;
+		margin-bottom: 30px;
+		text-align: center;
+		width: revert;
+		min-width: 400px;
+	}
+}
+
+.location-item{
+	list-style: none;
+	font-size: 1.5em;
+}
+
+.location-line{
+	flex-grow: 1;
+	height: 2px;
+	background-color: white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.location-line-map{
+	flex-grow: 1;
+	height: 2px;
+	background-color: #636363;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.footer-location-line{
+	margin: auto;
+	max-width: 900px;
+	flex-grow: 1;
+	height: 2px;
+	background-color: white;
+	margin-bottom: 80px;
 }

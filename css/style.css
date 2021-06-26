@@ -1,6 +1,10 @@
+html{
+	overflow-x: hidden;
+}
+
 body{
 	background-color: #a9cc69;
-	overflow-y: scroll;
+	position: relative;
 }
 
 a:link{

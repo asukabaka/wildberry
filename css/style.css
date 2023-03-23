@@ -49,7 +49,7 @@ html.is-rendering .transition-fade{
 
 .swup-progress-bar {
   height: 5px;
-  background-color: black;
+  background-color: #eb883d;
 }
 
 .text{
@@ -290,9 +290,9 @@ img.card-img-top{
 	margin-top: 0px;
 }
 
-.card-white{
+/*.card-white{
 	background-color: #ededee;
-}
+}*/
 
 /*.card-pink{
 	background-color: #bd828c;

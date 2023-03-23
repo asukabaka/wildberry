@@ -526,3 +526,7 @@ img.card-img-top{
 	width: 33.33%;
 	margin: auto;
 }
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+	padding: 0px;
+}

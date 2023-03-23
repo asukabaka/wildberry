@@ -1,9 +1,12 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+</style>
 html{
 	overflow-x: hidden;
 }
 
 body{
-	background-color: #a9cc69;
+	background-color: white;
 	position: relative;
 	overflow-x: hidden;
 }
@@ -13,13 +16,13 @@ a:link{
 }
 
 ol, ul{
-	padding-right: 2rem;
+/*	padding-right: 2rem;*/
 }
 
 .background-color{
-	max-width: 1280px;
 	background-color: white;
 	margin: auto;
+	max-width: 1280px;
 }
 
 .transition-fade{
@@ -55,79 +58,95 @@ html.is-animating .transition-fade{
 	margin-left: 5px;
 }
 
+h1, h2, h3, h4, h5, p, a {
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+
 h1{
-	font-family: 'Dosis', sans-serif;
+	font-family: "brandon-grotesque", sans-serif;
 	font-size: 1em;
 	letter-spacing: -.75px;
-	color: white;
+	color: #584533;
 	width: inherit;
 }
 
 h2{
-	font-family: 'Dosis', sans-serif;
+	font-family: "brandon-grotesque", sans-serif;
 	font-size: 1.75em;
 	letter-spacing: -.75px;
-	color: #636363;
+	color: #584533;
 	width: inherit;
 	text-align: center;
 }
 
 h3{
-	font-family: 'Dosis', sans-serif;
+	font-family: "brandon-grotesque", sans-serif;
 	font-size: 3em;
+	font-weight: bold;
 	letter-spacing: -.75px;
-	color: #f16078;
+	color: #eb883d;
 	width: inherit;
 	text-align: center;
 }
 
+.banner-text{
+	font-weight: bold;
+	color: #584533;
+}
+
 .footer-title{
-	color: white;
 	padding-bottom: 50px;
 }
 
 h4{
-	font-family: 'Dosis', sans-serif;
-	font-size: 1.4em;
+	font-family: "brandon-grotesque", sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
 	letter-spacing: -.75px;
-	color: white;
+	color: #584533;
 	width: inherit;
 	text-align: center;
 }
 
 .location-h4{
 	text-align: center;
+	height: 75px;
 }
 
 h5{
-	font-family: 'Dosis', sans-serif;
+	font-family: "brandon-grotesque", sans-serif;
 	font-size: 2.5em;
+	font-weight: bold;
 	letter-spacing: -.75px;
-	color: #f16078;
+	color: #eb883d;
 	width: 100%;
 	text-align: center;
 }
 
 p.card-text{
-	font-family: 'Dosis', sans-serif;
+	font-family: "brandon-grotesque", sans-serif;
 	font-size: 1.5em;
+	font-weight: bold;
 	text-align: center;
-	color: #636363;
+	color: #584533;
 /*	height: 140px;*/
 }
 
 p.card-text-white{
-	font-family: 'Dosis', sans-serif;
+	font-family: "brandon-grotesque", sans-serif;
 	font-size: 1em;
+	font-weight: bold;
 	text-align: center;
 	color: white;
 }
 
 p.card-text-address{
-	font-family: 'Dosis', sans-serif;
+	font-family: "brandon-grotesque", sans-serif;
 	font-size: .65em;
+	font-weight: bold;
 	text-align: left;
-	color: white;
+	color: #584533;
 }
 
 .about{
@@ -136,11 +155,10 @@ p.card-text-address{
 
 .line{
 	flex-grow: 1;
-	margin-left: 20px;
-	height: 2px;
-	background-color: #f16078;
-	margin-top: 35px;
-	margin-right: 95px;
+	max-width: 1280px;
+	height: 1px;
+	margin: auto;
+	background-color: #584533;
 }
 
 @media (max-width: 900px) {
@@ -149,25 +167,17 @@ p.card-text-address{
 	}
 }
 
-.banner-text{
-	margin-left: 95px;
-}
-
-@media (max-width: 900px) {
-	.banner-text{
-		margin-left: 15px;
-	}
-}
 
 p.card-text.about{
 	text-align: left;
 }
 
 a.nav-link{
-	font-family: 'Dosis', sans-serif;
-	font-size: 1.25em;
+	font-family: "brandon-grotesque", sans-serif;
+	font-size: 1.3em;
+	font-weight: bold;
 	letter-spacing: -.75px;
-	color: white;
+	color: #584533;
 }
 
 a.nav-location{
@@ -180,17 +190,23 @@ li.nav-item{
 	margin-right: 8px;
 }
 
-.navbar.navbar-expand-lg.navbar-light{
-	border-radius: 15px 15px 0px 0px;
-	background-color: #f16078;
+.navbar{
 	max-width: 1280px;
+	margin: auto;
+}
+
+.navbar-collapse{
+	flex-grow: 0;
+}
+
+.navbar.navbar-expand-lg.navbar-light{	/*background-color: #596c5a;*/
 	margin: auto;
 	padding-top: .25em;
 	padding-bottom: .5em;
 }
 
 .navbar-light .navbar-nav .nav-link{
-	color: white;
+	color: #584533;
 }
 
 .nav-link:focus, .nav-link:hover{
@@ -198,15 +214,13 @@ li.nav-item{
 }
 
 .navbar-brand{
-	width: 170px;
-	margin-top: 5px;
-	margin-left: 23px;
+	width: 200px;
 }
 
-.navbar-nav.me-auto.mb-2.mb-lg-0{
+/*.navbar-nav.me-auto.mb-2.mb-lg-0{
 	margin-left: 20px;
 	margin-top: 7px;
-}
+}*/
 
 .content{
 	margin: auto;
@@ -221,7 +235,6 @@ li.nav-item{
 }
 
 .carousel-inner{
-	border-radius: 15px 15px 15px 15px;
 }
 
 .carousel-control-prev-icon , .carousel-control-next-icon{
@@ -236,15 +249,23 @@ li.nav-item{
 	margin: auto;
 	margin-top: 40px;
 	border: none;
-	max-width: 500px;
+	max-width: 700px;
 	height: auto;
-	background-color: #a9cc69;
-	border-radius: 15px;
-	padding: 7px;
+/*	background-color: #596c5a;*/
+/*	padding: 7px;*/
+	transition: ease .5s;
+}
+
+.location-card{
+	max-width: 350px;
+}
+
+.card:hover{
+	opacity: .6;
+	transition: ease .5s;
 }
 
 img.card-img-top{
-	border-radius: 15px;
 }
 
 .card-banner{
@@ -255,7 +276,7 @@ img.card-img-top{
 	background-color: #ededee;
 }
 
-.card-pink{
+/*.card-pink{
 	background-color: #bd828c;
 }
 
@@ -269,14 +290,18 @@ img.card-img-top{
 
 .card-nondairy{
 	background-color: #d98079;
-}
+}*/
 
 .card-toppings{
-	max-width: 200px;
+	max-width: 250px;
 }
 
 .card-menu{
-	max-width: 350px;
+	max-width: 250px;
+}
+
+.card-menu-drink{
+	max-width: 300px;
 }
 
 .card-menu-text{
@@ -285,11 +310,10 @@ img.card-img-top{
 
 .items{
 	margin: auto;
-	max-width: 1150px;
 	display: flex;
 	flex-direction: row;
 	background-color: white;
-	padding-top: 50px;
+/*	padding-top: 50px;*/
 	text-decoration: none;
 }
 
@@ -300,17 +324,16 @@ img.card-img-top{
 }
 
 .frontpage-items{
-	padding-bottom: 150px;
+/*	padding-bottom: 150px;*/
 }
 
 .footer{
-	border-radius: 0px 0px 15px 15px;
 	margin: auto;
 	max-width: 1280px;
 	height: 100%;
-	background-color: #f16078;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	background-color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	margin-bottom: 20px;
 }
 
@@ -350,7 +373,7 @@ img.card-img-top{
 
 .flavors {
   	margin: auto;
-	max-width: 1150px;
+	max-width: 1280px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -402,13 +425,14 @@ img.card-img-top{
 	padding-top: 25px;
 	padding-bottom: 25px;
 	width: 100%;
-	height: 300px;
+	height: 150px;
 }
 
 .social-top{
 	max-width: 1280px;
 	margin: auto;
 	margin-top: 20px;
+	background-color: #a8ca68;
 }
 
 @media (max-width: 900px) {
@@ -424,10 +448,9 @@ img.card-img-top{
 .step-box{
 	display: flex;
 	width: 300px;
-	height: 150px;
+	height: 125px;
 	background-color: #706254;
 	margin: auto;
-	border-radius: 25px;
 	margin-bottom: 50px;
 }
 
@@ -476,16 +499,16 @@ img.card-img-top{
 
 .location-line{
 	flex-grow: 1;
-	height: 2px;
-	background-color: white;
+	height: 1px;
+	background-color: #584533;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
 .location-line-map{
 	flex-grow: 1;
-	height: 2px;
-	background-color: #636363;
+	height: 1px;
+	background-color: #584533;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -494,7 +517,12 @@ img.card-img-top{
 	margin: auto;
 	max-width: 900px;
 	flex-grow: 1;
-	height: 2px;
-	background-color: white;
+	height: 1px;
+	background-color: #584533;
 	margin-bottom: 80px;
+}
+
+.col-sm-6{
+	width: 33.33%;
+	margin: auto;
 }

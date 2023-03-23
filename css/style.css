@@ -6,9 +6,10 @@ html{
 }
 
 body{
-	background-color: white;
-	position: relative;
-	overflow-x: hidden;
+  background-color: white;
+  overflow-y: scroll;
+  margin: 0;
+  width: 100%;
 }
 
 a:link{
@@ -26,12 +27,29 @@ ol, ul{
 }
 
 .transition-fade{
-	opacity: 1;
-	transition: 500ms;
+  width: 100%;
+  opacity: 1;
+  transition: 500ms;
 }
 
 html.is-animating .transition-fade{
-	opacity: 0;
+  opacity: 1;
+
+  transform: translateY(100%);
+}
+
+html.is-leaving .transition-fade{
+  opacity: 0;
+  transform: translateY(0);
+}
+
+html.is-rendering .transition-fade{
+  position: fixed;
+}
+
+.swup-progress-bar {
+  height: 5px;
+  background-color: black;
 }
 
 .text{

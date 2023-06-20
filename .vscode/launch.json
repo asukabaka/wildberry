@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open boba-tea.html",
-            "file": "c:\\Users\\qu4nt\\OneDrive\\Documents\\wildberry\\boba-tea.html"
+            "name": "Open froyo-toppings.html",
+            "file": "c:\\Users\\qu4nt\\OneDrive\\Documents\\wildberry\\froyo-toppings.html"
         }
     ]
 }
